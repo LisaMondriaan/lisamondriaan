@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+        body {
+            background-image: url("wolkenzaamslagroze.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            color:black;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            }
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+            position: fixed;
+            }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            width: 25%; /* Four links of equal widths */
+            text-align: center;
+            }
+
+        .navbar a:hover {
+            background-color: #000;
+            }
+
+        .navbar a.active {
+            background-color:rgb(255, 153, 153);
+            }
+
+        @media screen and (max-width: 500px) {
+        .navbar a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+            }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 75%;
+            background-color:rgba(255, 184, 184, 0.9);
+            }
+
+        td, th {
+            border: 2px solid white;
+            text-align: left;
+            padding: 5px;
+            }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+        .collapsible {
+              background-color:rgba(255, 184, 184, 0.9);
+              color: black;
+              cursor: pointer;
+              padding: 18px;
+              width: 75%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              margin-left:auto; 
+              margin-right: auto;
+            }
+            
+        .active, .collapsible:hover {
+              background-color: lightgrey;
+              color: black;
+            }
+            
+        .content {
+              padding: 0 18px;
+              display: none;
+              overflow: hidden;
+              background-color: rgb(189, 195, 199, 0.9);
+              color: black;
+              margin-left: auto; 
+              margin-right:auto;
+              width: 75%;
+            }
+    </style>
+    <head>
+        <title>My Personal Dashboard</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <a class="active" href="index.html">Homepage</a>
+            <a href="profile.html">Profile</a>
+            <a href="personaldashboard.html">Personal Dashboard</a>
+            <a href="FAQ.html">FAQ</a>
+          </div><br/></br> 
+        <h1 style="text-align: center">My Personal Dashboard</h1>
+        <p class="p"><b><u>Study Monitor:</u></b></p>
+        <table class="center">
+            <tr>
+              <th style="background-color:rgb(255, 153, 168)">Quartile</th>
+              <th style="background-color:rgb(255, 153, 168)">Course</th>
+              <th style="background-color:rgb(255, 153, 168)">EC</th>
+              <th style="background-color:rgb(255, 153, 168)">Exam</th>
+              <th style="background-color:rgb(255, 153, 168)">Grade</th>
+            </tr>
+            <tr>
+              <td rowspan="3">1</td>
+              <td>Programme and Career Orientation</td>
+              <td style="background-color: rgb(245, 176, 65, 0.9);">2,5</td>
+              <td>Assessment exam</td>
+              <td>?</td>
+            </tr>
+            <tr>
+              <td>Computer Science Basics</td>
+              <td style="background-color: rgb(245, 176, 65, 0.9);">7,5</td>
+              <td>Written exam</td>
+              <td>?</td>
+            </tr>
+            <tr>
+                <td>Programming Basics</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">5</td>
+                <td>Case study exam</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td>Object Oriented Programming</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">10</td>
+                <td>Case study</td>
+                <td>Project</td>
+            </tr>
+            <tr>
+                <td>Professional Skills 1</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">2,5</td>
+                <td>Portfolio exam</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="7">3</td>
+                <td rowspan="2">Framework Project 1</td>
+                <td rowspan="2" style="background-color: rgb(245, 176, 65, 0.9);">2</td>
+                <td rowspan="2">2 Portfolio exams</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td>Framework Development 1</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">5</td>
+                <td>Case study</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td>Professional Working Environment</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">2,5</td>
+                <td>Assessment</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Professional Skills 2</td>
+                <td rowspan="3" style="background-color: rgb(245, 176, 65, 0.9);">2,5</td>
+                <td>Portfolio exam</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2 written exams</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="5">4</td>
+                <td>Framework Project 2</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">5</td>
+                <td>Portfolio exam</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td>Framework Development 2</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">5</td>
+                <td>Portfolio exam</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Professional Skills 3</td>
+                <td rowspan="3" style="background-color: rgb(245, 176, 65, 0.9);">2,5</td>
+                <td>Portfolio exam</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2 Written exams</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td rowspan="2">"Whenever"</td>
+                <td>HZ Personality</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">2,5</td>
+                <td>Portfolio</td>
+                <td>?</td>
+            </tr>
+            <tr>
+                <td>IT Personality</td>
+                <td style="background-color: rgb(245, 176, 65, 0.9);">2,5</td>
+                <td>Portfolio</td>
+                <td>?</td>
+            </tr>
+          </table>
+          <table style="margin:auto;">
+            <tr>.</tr>
+            <tr>
+              <th rowspan="3" style="text-align: center;">Total EC:</th>
+              <th rowspan="3" style="text-align: center;">0</th>
+              <th rowspan="3" style="text-align: center;">45 EC needed for year 2</th>
+              <th style="text-align:center; background-color: rgba(82, 190, 128, 0.9);">Gehaald</th>
+            </tr>
+            <tr>
+              <th style="text-align: center; background-color: rgba(245, 176, 65, 0.9);">Nog te doen</th>
+            </tr>
+            <tr>
+              <th style="text-align: center; background-color: rgba(231, 76, 60, 0.9);">Niet gehaald</th>
+          </table><br/><br/><br/>
+          <p class="p"><b><u>Study Guide:</u></b></p>
+          <button type="button" class="collapsible"><li>The HZ Course and Examination Regulations (CER)</li></button>
+        <div class="content">
+          <p class="p"><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen">https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen</a></p>
+        </div>
+      <button type="button" class="collapsible"><li>The Implementation Regulations (IR) of the HBO-ICT programme</li></button>
+        <div class="content">
+          <p class="p"><a href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf">https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf</a></p>
+        </div>
+      <button type="button" class="collapsible"><li>The Learn environment</li></button>
+        <div class="content">
+          <p class="p"><a href="https://learn.hz.nl/my/">https://learn.hz.nl/my/</a></p>
+        </div>
+      <button type="button" class="collapsible"><li>The Teams environment of the study programme</li></button>
+        <div class="content">
+          <p class="p"><a href="https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/Algemeen?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel">https://teams.microsoft.com/_?lm=deeplink&lmsrc=homePageWeb&cmpid=WebSignIn#/school/conversations/Algemeen?threadId=19:2e2afa0286b04932be16cb8ad2d9d2c0@thread.skype&ctx=channel</a></p>
+        </div>
+      <button type="button" class="collapsible"><li>The page in MyHZ with my study progress</li></button>
+        <div class="content">
+          <p class="p"><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus">https://apps.hz.nl/angular/studievoortgang/studiestatus</a></p>
+        </div>
+      <button type="button" class="collapsible"><li>The Github environment of the study programme</li></button>
+        <div class="content">
+          <p class="p"><a href="https://github.com/LisaMondriaan">https://github.com/LisaMondriaan</a></p>
+        </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    </body>
+</html>

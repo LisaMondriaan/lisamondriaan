@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box}
+        body {
+            background-image: url("Mondriaan5.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            color:black;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+            position: fixed;
+            }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            width: 25%; /* Four links of equal widths */
+            text-align: center;
+            }
+
+            .navbar a:hover {
+            background-color: #000;
+            }
+
+            .navbar a.active {
+            background-color:rgb(255, 153, 153);
+            }
+
+            @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+            }
+
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .bg-image {
+            /* Full height */
+            height: 65%; 
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+         
+        .img1 { background-image: url("zonsondergang.jpg"); }
+        .img2 { background-image: url("nienkeselfie.jpg"); }
+        .img3 { background-image: url("cedricfinn.jpg"); }
+        .img4 { background-image: url("outfitzwart.jpg"); }
+        .img5 { background-image: url("diploma.jpg"); }
+
+            /* Position text in the middle of the page/image */
+        .bg-text {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            font-size: 80px;
+            border: 10px solid #f1f1f1;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 700px;
+            padding: 20px;
+            text-align: center;
+            }
+    </style>
+     <head>
+         <title>My Profile</title>
+     </head>
+     <body>
+        <div class="navbar">
+            <a class="active" href="index.html">Homepage</a>
+            <a href="profile.html">Profile</a>
+            <a href="personaldashboard.html">Personal Dashboard</a>
+            <a href="FAQ.html">FAQ</a>
+        </div>
+        <div class="bg-image img1"></div>
+        <div class="bg-image img2"></div>
+        <div class="bg-image img3"></div>
+        <div class="bg-image img4"></div>
+        <div class="bg-image img5"></div>
+
+        <div class="bg-text">
+            <h1 style="font-size: 42%">I am Lisa Mondriaan</h1>
+            <p style="font-size: 20%">and I am a HBO-ict student at the HZ University of Applied Science. Everyday I need to travel an hour to school because I live on the other side of the Westerschelde.
+                I live in a small village called Zaamslag with my parents.I am 17 years old and i just finished highschool, which means I have my HAVO-diploma</p>
+                <p style="font-size: 20%">I work at a new Italian restaurant in Terneuzen, Mercato9. 
+                    I like to have a drink with friends after work or to eat somewhere nice. I also love a good party. 
+                    I also have a boyfriend who is a very important person in my life, just like my family.</p>
+                <p style="font-size: 20%">A couple of my character traits are:
+                <div style="float:center">
+                    <ul style="font-size: 20%">
+                        <li>creative</li>
+                        <li>enthusiastic</li>
+                        <li>sensitive</li>
+                        <li>passionate</li>
+                        <li>diligent to learn</li>   
+                        <li>social</li>
+                        <li>stylish</li>
+                    </ul>
+                </div>
+                </p>
+        </div>
+     </body>
+</html>

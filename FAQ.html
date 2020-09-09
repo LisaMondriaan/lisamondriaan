@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {box-sizing: border-box}
+            body {
+              color:black;
+              background-image: url("wolkenzaamslagroze.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;  
+              background-size: cover;
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+              text-align: center;
+              }
+
+            .navbar {
+              width: 100%;
+              background-color: #555;
+              overflow: auto;
+              }
+
+            .navbar a {
+              float: left;
+              padding: 12px;
+              color: white;
+              text-decoration: none;
+              font-size: 17px;
+              width: 25%; /* Four links of equal widths */
+              text-align: center;
+              }
+
+            .navbar a:hover {
+              background-color: #000;
+              }
+
+            .navbar a.active {
+              background-color:rgb(255, 153, 153);
+              }
+
+              @media screen and (max-width: 500px) {
+            .navbar a {
+                  float: none;
+                  display: block;
+                  width: 100%;
+                  text-align: left;
+              }
+              }
+          
+            head {
+              font-family:Verdana, Geneva, Tahoma, sans-serif
+              }
+
+            p {
+              text-align: center;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              }
+            .collapsible {
+              background-color:rgba(255, 184, 184, 0.7);
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 75%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 18px;
+              margin-left:auto;
+              margin-right:auto; 
+            }
+            
+            .active, .collapsible:hover {
+              background-color: lightgrey;
+              color: black;
+            }
+            
+            .content {
+              padding: 0 18px;
+              display: none;
+              overflow: hidden;
+              background-color: rgb(189, 195, 199, 0.7);
+              color: black;
+              margin-left:auto;
+              margin-right:auto; 
+              width: 75%;
+              font-size: 18px;
+            }
+    </style>
+    <head>
+      <title>FAQ</title>
+    </head>
+  <body>
+      <div class="navbar">
+        <a class="active" href="index.html">Homepage</a>
+        <a href="profile.html">Profile</a>
+        <a href="personaldashboard.html">Personal Dashboard</a>
+        <a href="FAQ.html">FAQ</a>
+      </div>
+    <h2 style="font-family: Arial, Helvetica, sans-serif; font-size: 2em;">Frequently Asked Questions</h2>
+      <button type="button" class="collapsible">How can you print a document from your laptop at HZ?</button>
+        <div class="content">
+          <p class="p">You can <a href="https://print.hz.nl/login.cfm?dest=index.cfm&">log in</a> with your username from school and print a document.</p>
+        </div>
+      <button type="button" class="collapsible">How can you scan a document a send it to your laptop at HZ?</button>
+        <div class="content">
+          <p class="p">?</p>
+        </div>
+      <button type="button" class="collapsible">What do you need to do when you are sick / show symptoms of coronavirus?</button>
+        <div class="content">
+          <p class="p">Click on this <a href="https://www.rivm.nl/coronavirus-covid-19">link</a> to see some information about COVID-19 and what measures you need to take.</p>
+        </div>
+      <button type="button" class="collapsible">How can you book a project space in one of the wings?</button>
+        <div class="content">
+          <p class="p">If you go to the HZ website and log in on to <a href="https://portal.hz.nl/">MyHZ</a> you can go to the Selfservice Portel and book a project space.</p>
+        </div>
+      <button type="button" class="collapsible">What are the instructions if you want to park your car at the HZ parking lot?</button>
+        <div class="content">
+          <p class="p">You need to go to the counter, by the entrance of the HZ, and ask if the want to activate your parking access on your schoolpas. Now you can park in one of the hunderd parkingspots of the HZ. </p>
+        </div>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+  
+  </body>
+</html>
+  
