@@ -13,31 +13,31 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             }
+          ::-webkit-scrollbar {
+            display: none;
+            }
 
-        .navbar {
+            .navbar {
             width: 100%;
             background-color: #555;
-            overflow: auto;
+            overflow: block;
             position: fixed;
             }
 
         .navbar a {
             float: left;
-            padding: 12px;
+            padding: 22px;
             color: white;
             text-decoration: none;
-            font-size: 17px;
-            width: 25%; /* Four links of equal widths */
+            font-size: 20px;
+            width: 14.2857143%; /* Four links of equal widths */
             text-align: center;
             }
 
         .navbar a:hover {
-            background-color: #000;
+            background-color: rgb(255, 153, 153);
             }
 
-        .navbar a.active {
-            background-color:rgb(255, 153, 153);
-            }
 
         @media screen and (max-width: 500px) {
         .navbar a {
@@ -82,7 +82,6 @@
               font-size: 15px;
               margin-left:auto; 
               margin-right: auto;
-              border: 2px solid white;
             }
             
         .active, .collapsible:hover {
@@ -106,11 +105,14 @@
     </head>
     <body>
         <div class="navbar">
-            <a class="active" href="index.html">Homepage</a>
+            <a href="index.html">Homepage</a>
             <a href="profile.html">Profile</a>
             <a href="personaldashboard.html">Personal Dashboard</a>
             <a href="FAQ.html">FAQ</a>
-          </div><br/></br> 
+            <a href="viewonthejob.html">View On The Job</a>
+            <a href="mymotivation.html">My Motivation</a>
+            <a href="profession.html">Profession</a>
+          </div><br/></br><br/>
         <h1 style="text-align: center">My Personal Dashboard</h1>
         <p class="p"><b><u>Study Monitor:</u></b></p>
         <table class="center">
@@ -283,5 +285,6 @@
       });
     }
     </script>
+    </br><br/><br/>
     </body>
 </html>
